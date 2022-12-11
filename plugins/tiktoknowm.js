@@ -28,7 +28,7 @@ ${txt}
 🌟 *Descripción:*
   ${json.result.caption}
   
-  🐈 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨 🐈
+  𝓟𝓸𝓵𝓑𝓸𝓽
     `
     await conn.sendFile(m.chat, url, 'tiktok.mp4', txt.trim(), m)
 }
