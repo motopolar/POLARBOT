@@ -1,6 +1,6 @@
 const fetch = require('node-fetch')
 let handler = async (m, { usedPrefix, command, conn, args }) => {
-  if (!args[0]) throw `❰ ❗️ ❱ *Estas usando mal el comando!!*
+  if (!args[0]) throw `❰ ❗️ ❱ *Estás usando mal el comando!!*
 *Ejemplo:* *${usedPrefix}${command}* https://twitter.com/NetflixLAT/status/1496531266539294727?t=ud4OO-43ifmaAu9DHec7ew&s=19`
   let res = await twitter(args[0])
   let result = res.result.reverse().filter(({ mime }) => /video/i.test(mime)), video, index
@@ -24,7 +24,7 @@ let handler = async (m, { usedPrefix, command, conn, args }) => {
 📎 *Link:* ${ress.link}
 
 🎦 *Formato:* ${ress.mime}
-🐈 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨 🐈
+𝓟𝓸𝓵𝓑𝓸𝓽
 `.trim(), m)
 }
 handler.help = ['twitter'].map(v => v + ' <url>')
