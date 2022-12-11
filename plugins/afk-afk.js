@@ -4,9 +4,9 @@ let handler = async (m, { text }) => {
     user.afkReason = text
     m.reply(`
     💤 AFK 
-🤖 Estas afk Envía un mensaje 🤖
+🦋| Estás afk. Envía un mensaje 
 ᳆⃟✪ Usuario: ${conn.getName(m.sender)} 
-᳆⃟✪ Motivó: ${text ? ': ' + text : ''}
+᳆⃟✪ Motivo: ${text ? ': ' + text : ''}
   `)
 }
 handler.help = ['Afk <motivo>']
