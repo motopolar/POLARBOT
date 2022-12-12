@@ -62,7 +62,9 @@ global.work = ["Trabajas como cortador de galletas y ganas", "Trabaja para una e
 "Trabajas como ecologista de anguilas y ganas", "Trabajas como zoólogo y ganas", 
 "Trabajas en Disneyland como un panda disfrazado y ganas", "Reparas las máquinas recreativas y recibes", 
 "Hiciste algunos trabajos ocasionales en la ciudad y Ganaste", "Limpias un poco de moho tóxico de la ventilación y ganas", 
-"Resolviste el misterio del brote de cólera y el gobierno te recompensó con una suma de" 
+"Resolviste el misterio del brote de cólera y el gobierno te recompensó con una suma de", "Trabajas como asistente de Rosalía y ganas",
+"Ayudaste con la producción de MOTOMAMI y ganas"             
+          
 ]
 
 
