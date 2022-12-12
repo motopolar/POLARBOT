@@ -4,7 +4,7 @@ let handler = async (m, { conn, isPrems}) => {
 
   let hasil = Math.floor(Math.random() * 5000)
   let time = global.db.data.users[m.sender].lastwork + 600000
-  if (new Date - global.db.data.users[m.sender].lastwork < 600000) throw `*Estas cansado* y por lo tanto hay que esperar ${msToTime(time - new Date())} para volver a trabajar!`
+  if (new Date - global.db.data.users[m.sender].lastwork < 600000) throw `*Estás cansado,* tienes mucha dedicación, pero Polar no puede asignarte otro trabajo hasta que descanses. Espera  ${msToTime(time - new Date())} para volver a trabajar!`
 
   m.reply(`
 ‣ ${pickRandom(global.work)} ${hasil} 🪙
