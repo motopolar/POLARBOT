@@ -51,17 +51,17 @@ let handler = async (m, { conn, args, usedPrefix, command, text}) => {
 ╽🤖 Ingrese link de Tiktok
 ┃🤖 Ejemplo:
 ┃${usedPrefix + command} https://vm.tiktok.com/ZMN2HrgFM/?k=1
-╰────────────⋆⋆`
+╰────────────⋆⋆` 𝓟𝓸𝓵𝓑𝓸𝓽
      let ttdl = await tbTtdl(text)
-    if (!args[0].match(/tiktok/gi)) throw `📵 Link no válido 🤖`
+    if (!args[0].match(/tiktok/gi)) throw `🤖 ¿Estás seguro que es un enlace de TikTok? Tu amigo Polar no lo reconoce 😔`
     await m.reply(wait)
 		
   if(command.includes('nowm')) {
-      conn.sendFile(m.chat, ttdl.result.nowatermark, 'tiktok.mp4', `🤖 Tú pedido 🤖`.trim(), m)
+      conn.sendFile(m.chat, ttdl.result.nowatermark, 'tiktok.mp4', `🤖 Tu amigo Polar ha descargado este vídeo con mucho cariño para ti.`.trim(), m)
    } else if (command.includes('audio')) {
      conn.sendFile(m.chat, ttdl.result.nowatermark, 'tiktok.mp3', null, m, null, { mimetype: 'audio/mp4' })
    } else {
-     conn.sendHydrated(m.chat, `🤖 Tú pedido 🤖`, igtb, ttdl.result.watermark, null, null, null, null, [['⎙ NOWM', `${usedPrefix}tiktoknowm ${text}`]], m)
+     conn.sendHydrated(m.chat, `🤖 Tu amigo Polar ha descargado este vídeo con mucho cariño para ti.`, igtb, ttdl.result.watermark, null, null, null, null, [['⎙ NOWM', `${usedPrefix}tiktoknowm ${text}`]], m)
    }
    
 }
