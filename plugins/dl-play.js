@@ -1,8 +1,8 @@
 
-import yts from 'yt-search'
+import yts from 'youtube-yts.js'
 let handler = async (m, { conn, command, text, usedPrefix }) => {
 	
-	if (!text) throw `✳️ *Ingresa el título de una canción*\n\n📌Ejemplo *${usedPrefix + command}* Lil Peep hate my life`
+	if (!text) throw `✳️ *Ingresa el título de una canción*\n\n📌Ejemplo *${usedPrefix + command}* Rosalía - Despechá`
 	let vid = (await yts(text)).all[0]
 	if (!vid) throw `✳️ Vídeo/Audio no encontrado`
 	let { title, description, thumbnail, videoId, timestamp, views, ago, url } = vid
