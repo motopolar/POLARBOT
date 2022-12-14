@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 let handler = async (m, {command, conn, text}) => {
-if (!text) throw `🤔Polar quiere saber qué estpa buscando. Ingrese el nombre y artista de la canción.\n\n*—◉ 𝙀𝙟𝙚𝙢𝙥𝙡𝙤:\n#play Rosalía - Despechá*`
+if (!text) throw `🤔Polar quiere saber qué estpa buscando. Ingrese el nombre y artista de la canción.\n\n*—◉ 𝙀𝙟𝙚𝙢𝙥𝙡𝙤:\n/play Rosalía - Despechá*`
 try {
 let res = await fetch(`https://api.lolhuman.xyz/api/ytplay2?apikey=${lolkeysapi}&query=${text}`)
 if (command == 'play.1') {
